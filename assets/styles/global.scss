@@ -1,0 +1,34 @@
+@use 'mixins' as *;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.44;
+  color: #202020;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+ul {
+  list-style: none;
+}
+
+.base-layout {
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+  }
+}
